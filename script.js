@@ -44,7 +44,7 @@ function validateForm(){
     }
 
     else{
-        lastName.style.border ="1px solid green"
+        lastName.style.border ="2px solid green"
       }
 
     //check age
@@ -55,7 +55,7 @@ function validateForm(){
     }
 
     else{
-        age.style.border ="1px solid green"
+        age.style.border ="2px solid green"
       }
 
     //check email
@@ -67,7 +67,7 @@ function validateForm(){
     }
 
     else{
-        email.style.border ="1px solid green"
+        email.style.border ="2px solid green"
       }
 
      //check password
@@ -78,13 +78,13 @@ function validateForm(){
      }
 
      else{
-        password.style.border ="1px solid green"
+        password.style.border ="2px solid green"
       }
 
       //check confirm password
       const confirmPasswordValue = confirmPassword.value.trim();
       if(passwordValue !== confirmPasswordValue){
-        password_error.textContent = "Please enter the same password!"
+        confirmPassword_error.textContent = "Please enter the same password!"
         confirmPassword_error.style.color = "red";
       }
 
@@ -93,8 +93,6 @@ function validateForm(){
       }
 
       //check checkbox
-
-     //check password
      if(checkbox.checked === false){
        checkbox_error.textContent = "Please accept to our terms and condition"
        checkbox_error.style.color = "red";

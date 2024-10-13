@@ -14,9 +14,13 @@ body {
   color: white;
 }
 
+.main-container{
+    margin-top:40px;
+}
+
 #form {
   width: 500px;
-  height: 500px;
+  height: 600px;
   background-color: gray;
   padding: 20px;
   display: flex;
