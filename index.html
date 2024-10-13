@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-container">
-        <h1>Enter your data</h1>
+        <h1>Register with us</h1>
 
         <form action="" id="form">
             <div class="first_name">
-                <label for="first_name">Enter first Name:</label>
-                <input type="text" id="first_name">
+                <label for="first_name">Enter first Name:</label><br>
+                <input type="text" id="first_name" required>
                 <p id="firstName_error"></p>
             </div>
 
             <div class="last_name">
-                <label for="last_name">Enter last name:</label>
-                <input type="text" id="last_name">
+                <label for="last_name">Enter last name:</label><br>
+                <input type="text" id="last_name" required>
                 <p id="lastName_error"></p>
             </div>
 
             <div class="age">
-                <label for="age">Enter your age</label>
-                <input type="number" id="age">
+                <label for="age">Enter your age</label><br>
+                <input type="number" id="age" required>
                 <p id="age_error"></p>
             </div>
 
             <div class="email">
-                <label for="email">Enter email:</label>
-                <input type="email" id="email">
+                <label for="email">Enter email:</label><br>
+                <input type="email" id="email" required>
                 <p id="email_error"></p>
             </div>
 
             <div class="password">
-                <label for="password">Enter first Name:</label>
-                <input type="password" id="password">
+                <label for="password">Enter first Name:</label><br>
+                <input type="password" id="password" required>
                 <p id="password_error"></p>
             </div>
 
-            <div class="confirm_password">
-                <label for="confirm_password">Confirm password:</label>
+            <div class="confirm_password" required>
+                <label for="confirm_password">Confirm password:</label><br>
                 <input type="password" id="confirm_password">
                 <p id="confirm_password_error"></p>
             </div>
@@ -57,5 +58,8 @@
         </form>
 
     </div>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
