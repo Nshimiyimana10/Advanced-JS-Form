@@ -33,7 +33,7 @@ function validateForm(){
     }
 
     else{
-        firstName.style.border ="1px solid green"
+        firstName.style.border ="2px solid green"
       }
 
     //check last_name
