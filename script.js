@@ -30,6 +30,7 @@ function validateForm(){
     if(firstNameValue.length < 3){
       firstName_error.textContent = "First name must be at least 3 characters long"
       firstName_error.style.color = "red";
+       firstName.style.border ="2px solid red"
     }
 
     else{
@@ -41,6 +42,7 @@ function validateForm(){
     if(lastNameValue.length < 3){
       lastName_error.textContent = "Last name must be at least 3 characters long"
       lastName_error.style.color = "red";
+      lastName.style.border ="2px solid red"
     }
 
     else{
@@ -52,6 +54,7 @@ function validateForm(){
     if(ageValue < 18 || ageValue > 60){
       age_error.textContent = "Required age is between 18 and 60"
       age_error.style.color = "red";
+      age.style.border ="2px solid red";
     }
 
     else{
@@ -64,6 +67,7 @@ function validateForm(){
     if(Regex.test(emailValue) === false){
       email_error.textContent = "Please enter a valid email";
       email_error.style.color = "red";
+      email.style.border ="2px solid red";
     }
 
     else{
@@ -75,6 +79,7 @@ function validateForm(){
      if(passwordValue.length < 8 || passwordValue.length >16){
        password_error.textContent = "Password must be between 8 and 16 characters"
        password_error.style.color = "red";
+       password.style.border ="2px solid red"
      }
 
      else{
@@ -86,10 +91,11 @@ function validateForm(){
       if(passwordValue !== confirmPasswordValue){
         confirmPassword_error.textContent = "Please enter the same password!"
         confirmPassword_error.style.color = "red";
+        confirmPassword.style.border ="2px solid red"
       }
 
       else{
-        confirmPassword.style.border ="1px solid green"
+        confirmPassword.style.border ="2px solid green"
       }
 
       //check checkbox
